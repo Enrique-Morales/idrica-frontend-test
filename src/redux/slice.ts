@@ -25,6 +25,11 @@ export const slice = createSlice({
       );
       state.posts = newPostsList;
     },
+    editPost: (state, action: { payload: { post: Post; index: number } }) => {
+      const { index, post } = action.payload;
+      const { posts } = state;
+      state.posts = [...posts.slice(0, index), post, ...posts.slice(index + 1)];
+    },
   },
   extraReducers: (builder) => {
     // Add reducers for asynchronous actions here, and handle loading state as needed
@@ -42,6 +47,6 @@ export const fetchPosts = createAsyncThunk("posts/fetchAll", async () => {
   return posts;
 });
 
-export const { setPosts, deletePost } = slice.actions;
+export const { setPosts, deletePost, editPost } = slice.actions;
 
 export default slice.reducer;

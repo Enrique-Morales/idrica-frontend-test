@@ -4,11 +4,13 @@ import { Post } from "../../../utils/types";
 import Text from "../../atoms/Text/Text";
 import { TextVariants } from "../../../utils/constants";
 import DeleteButton from "../../atoms/DeleteButton/DeleteButton";
+import EditButton from "../../atoms/EditButton/EditButton";
 
 interface CardProps {
   post: Post;
   children?: ReactNode;
   onDelete: () => void;
+  onEdit: () => void;
 }
 
 // capitalise the first letter and wrap each new \n line in a div
@@ -20,19 +22,22 @@ export const parseBody = (body: string): ReactElement[] => {
 };
 
 const Card = (props: CardProps) => {
-  const { post, onDelete } = props;
+  const { post, onDelete, onEdit } = props;
   const { title, body, userId } = post;
 
   return (
     <div className="card">
-      <div className="card-top">
-        <div>
+      <div>
+        <div className="card-top">
           <Text variant={TextVariants.H6}>{title}</Text>
           <Text variant={TextVariants.SmallP}>By user {userId}</Text>
         </div>
-        <DeleteButton onClick={onDelete} />
+        <Text variant={TextVariants.P}>{parseBody(body)}</Text>
       </div>
-      <Text variant={TextVariants.P}>{parseBody(body)}</Text>
+      <div className="card-actions">
+        <DeleteButton onClick={onDelete} />
+        <EditButton onClick={onEdit} />
+      </div>
     </div>
   );
 };

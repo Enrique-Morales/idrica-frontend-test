@@ -9,5 +9,6 @@ export enum TextVariants {
 
 export enum ButtonStatus {
   Danger = "danger",
-  Neutral = "nautral",
+  Neutral = "neutral",
+  Success = "success",
 }

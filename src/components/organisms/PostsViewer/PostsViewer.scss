@@ -1,6 +1,10 @@
+@import "../../../utils/animations";
+
 .postsviewer {
   display: grid;
   grid-template-columns: 650px;
   gap: 12px;
   justify-content: center;
+  animation-name: fade-in;
+  animation-duration: 0.8s;
 }

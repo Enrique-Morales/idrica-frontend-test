@@ -1,0 +1,29 @@
+@keyframes pulse-in {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+@keyframes pulse-out {
+  from {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,14 +1,28 @@
 @import "../../../utils/variables";
-
+@import "../../../utils/animations";
 .card {
   width: 650px;
+  display: flex;
+  justify-content: space-between;
   border-radius: 8px;
   box-shadow: $card-box-shadow;
   padding: 24px;
   background-color: $white;
+  animation-name: pulse-out;
+  animation-duration: 0.5s;
   &-top {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 8px;
+  }
+  &-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &:hover {
+    animation-name: pulse-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
 }

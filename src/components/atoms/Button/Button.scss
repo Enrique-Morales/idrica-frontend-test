@@ -11,8 +11,22 @@
   padding: 6px 16px;
   text-align: center;
   text-decoration: none;
+  transition: 0.2s;
+  &:hover {
+    background-color: #e5e5e5;
+  }
   &-danger {
     background-color: $button-danger-bg;
     color: $button-danger-text;
+    &:hover {
+      background-color: #ef8989;
+    }
+  }
+  &-success {
+    background-color: #339966;
+    color: $button-danger-text;
+    &:hover {
+      background-color: #6fb994;
+    }
   }
 }

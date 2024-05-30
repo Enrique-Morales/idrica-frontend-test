@@ -16,7 +16,7 @@ const Modal = (props: ModalProps) => {
     <div className="dimmer">
       <div data-testid="modal" className="modal">
         <div className="modal-top">
-          <div onClick={() => onClose()}>
+          <div className="modal-close" onClick={() => onClose()}>
             <svg
               height="20px"
               version="1.1"
