@@ -39,7 +39,7 @@ The project has been developed according to speficifations:
 - Design: I hope you like it
   - Animations
 - Implementation
-  - Coded in React functional components + Typescript without use of any types
+  - Coded in React functional components + Typescript without use of `any` types
   - Made use of Prettier to help with code formatting and indentation
   - Made use of no external library other than required by specification
   - Unit tests, integration tests and E2E tests with Cypress (though it's a very basic implementation)
