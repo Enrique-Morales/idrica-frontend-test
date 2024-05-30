@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import "./Text.scss";
-import { TextVariants } from "../../../constants";
+import { TextVariants } from "../../../utils/constants";
 
 interface TextProps {
   variant?: TextVariants;
@@ -10,7 +10,11 @@ interface TextProps {
 const Text = (props: TextProps) => {
   const { variant = TextVariants.P, children } = props;
 
-  return <div className={`text-${variant}`}>{children}</div>;
+  return (
+    <div data-testid="text" className={`text-${variant}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Text;

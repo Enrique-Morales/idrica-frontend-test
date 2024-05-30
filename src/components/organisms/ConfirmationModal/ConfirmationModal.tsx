@@ -2,7 +2,7 @@ import "./ConfirmationModal.scss";
 import Modal from "../../molecules/Modal/Modal";
 import Text from "../../atoms/Text/Text";
 import Button from "../../atoms/Button/Button";
-import { ButtonStatus } from "../../../constants";
+import { ButtonStatus } from "../../../utils/constants";
 
 interface ConfirmationModalProps {
   onConfirm: () => void;
@@ -16,7 +16,7 @@ const ConfirmationModal = (props: ConfirmationModalProps) => {
 
   return (
     <Modal onClose={onClose} show={show}>
-      <div className="confirmation">
+      <div data-testid="confirmationmodal" className="confirmation">
         <div className="confirmation-body">
           <Text>Are you sure you want to delete post with id {postId}?</Text>
         </div>

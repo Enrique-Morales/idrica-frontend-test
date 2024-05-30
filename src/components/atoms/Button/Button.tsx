@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import "./Button.scss";
-import { ButtonStatus } from "../../../constants";
+import { ButtonStatus } from "../../../utils/constants";
 
 interface ButtonProps {
   status?: ButtonStatus;
@@ -12,7 +12,11 @@ const Button = (props: ButtonProps) => {
   const { status = ButtonStatus.Neutral, onClick, children } = props;
 
   return (
-    <button className={`button button-${status}`} onClick={onClick}>
+    <button
+      data-testid="button"
+      className={`button button-${status}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

@@ -1,0 +1,50 @@
+$white: #ffffff;
+$gray: #d3d3d3;
+$light-gray: #c8d6db;
+$red: #ee6969;
+$black: #000000;
+$soft-black: #262626;
+
+// GENERAL
+
+$app-bg-golor: $light-gray;
+
+// BUTTON - General
+$button-box-shadow: #1b1f231a 0 1px 0;
+$button-border: 1px solid rgba(27, 31, 35, 0.15);
+$button-border-radius: 1px solid 6px;
+
+// BUTTON - State specific
+$button-neutral-bg: $gray;
+$button-danger-bg: $red;
+$button-danger-text: $white;
+
+// CARD
+
+$card-box-shadow: 0 0 0 0 white, 0 0 0 0 white,
+  rgba(0, 0, 0, 0.07) 0px 2px 15px -3px, rgba(0, 0, 0, 0.04) 0px 10px 20px -2px;
+
+// MODAL
+
+$modal-dimmer-bg: rgba(239, 239, 240, 0.8);
+$modal-bg: $white;
+$modal-border: 1px solid #ccc;
+$modal-border-radius: 8px;
+$modal-box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+
+// TYPOGRAPHY
+
+$h3-font-size: 30px;
+$h3-line-height: 25px;
+$h3-font-weight: 500;
+
+$h6-font-size: 20px;
+$h6-line-height: 25px;
+$h6-font-weight: 500;
+
+$p-font-size: 16px;
+$p-line-height: 24px;
+
+$smallp-font-size: 14px;
+$smallp-line-height: 23px;
+$smallp-text-color: $soft-black;

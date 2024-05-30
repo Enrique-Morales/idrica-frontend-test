@@ -1,17 +1,25 @@
+@import "../../../utils/variables";
+
+.text-h3 {
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  font-weight: $h3-font-weight;
+}
+
 .text-h6 {
   text-transform: capitalize;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
+  font-size: $h6-font-size;
+  line-height: $h6-line-height;
+  font-weight: $h6-font-weight;
 }
 
 .text-p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
 }
 
 .text-smallP {
-  font-size: 14px;
-  line-height: 23px;
-  color: #262626;
+  font-size: $smallp-font-size;
+  line-height: $smallp-line-height;
+  color: $smallp-text-color;
 }

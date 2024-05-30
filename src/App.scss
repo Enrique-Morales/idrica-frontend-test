@@ -1,1 +1,11 @@
-  
+@import "./utils/variables";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $app-bg-golor;
+  &-title {
+    margin: 24px;
+  }
+}

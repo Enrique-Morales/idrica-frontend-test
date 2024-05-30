@@ -1,3 +1,5 @@
+@import "../../../utils/variables";
+
 .dimmer {
   width: 100vw;
   height: 100vh;
@@ -5,13 +7,15 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  background-color: rgba(239, 239, 240, 0.8);
+  top: 0;
+  left: 0;
+  background-color: $modal-dimmer-bg;
   & .modal {
     width: 500px;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+    background: $modal-bg;
+    border: $modal-border;
+    border-radius: $modal-border-radius;
+    box-shadow: $modal-box-shadow;
     padding: 12px;
     &-top {
       display: flex;

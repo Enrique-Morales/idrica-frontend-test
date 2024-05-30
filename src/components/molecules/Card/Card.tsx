@@ -1,8 +1,8 @@
 import { ReactElement, ReactNode } from "react";
 import "./Card.scss";
-import { Post } from "../../../types";
+import { Post } from "../../../utils/types";
 import Text from "../../atoms/Text/Text";
-import { TextVariants } from "../../../constants";
+import { TextVariants } from "../../../utils/constants";
 import DeleteButton from "../../atoms/DeleteButton/DeleteButton";
 
 interface CardProps {
@@ -12,7 +12,7 @@ interface CardProps {
 }
 
 // capitalise the first letter and wrap each new \n line in a div
-const parseBody = (body: string): ReactElement[] => {
+export const parseBody = (body: string): ReactElement[] => {
   const capitalisedBody = body.charAt(0).toUpperCase() + body.slice(1);
   return capitalisedBody
     .split("\n")
