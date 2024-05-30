@@ -1,9 +1,13 @@
 $white: #ffffff;
 $gray: #d3d3d3;
 $light-gray: #c8d6db;
+$pale-white: #e5e5e5;
 $red: #ee6969;
+$light-red: #ef8989;
 $black: #000000;
 $soft-black: #262626;
+$green: #339966;
+$light-green: #6fb994;
 
 // GENERAL
 
@@ -12,12 +16,18 @@ $app-bg-golor: $light-gray;
 // BUTTON - General
 $button-box-shadow: #1b1f231a 0 1px 0;
 $button-border: 1px solid rgba(27, 31, 35, 0.15);
+$bbutton-padding: 6px 16px;
 $button-border-radius: 6px;
 
 // BUTTON - State specific
 $button-neutral-bg: $gray;
+$button-neutral-hover-bg: $pale-white;
 $button-danger-bg: $red;
 $button-danger-text: $white;
+$button-danger-hover-bg: $light-red;
+$button-success-bg: $green;
+$button-success-color: $white;
+$button-success-hover-bg: $light-green;
 
 // CARD
 
@@ -31,6 +41,17 @@ $modal-bg: $white;
 $modal-border: 1px solid #ccc;
 $modal-border-radius: 8px;
 $modal-box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+
+// INPUT
+
+$input-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+  0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$input-border: 1px solid #e2e8f0;
+$input-border-redius: 4px;
+$input-font-size: 16px;
+$input-line-height: 20px;
+$input-padding: 8px 12px;
+$input-hover-box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 
 // TYPOGRAPHY
 

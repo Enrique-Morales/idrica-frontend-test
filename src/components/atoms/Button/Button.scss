@@ -8,25 +8,25 @@
   box-shadow: $button-box-shadow;
   box-sizing: border-box;
   cursor: pointer;
-  padding: 6px 16px;
+  padding: $bbutton-padding;
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
   &:hover {
-    background-color: #e5e5e5;
+    background-color: $button-neutral-hover-bg;
   }
   &-danger {
     background-color: $button-danger-bg;
     color: $button-danger-text;
     &:hover {
-      background-color: #ef8989;
+      background-color: $button-danger-hover-bg;
     }
   }
   &-success {
-    background-color: #339966;
+    background-color: $button-success-bg;
     color: $button-danger-text;
     &:hover {
-      background-color: #6fb994;
+      background-color: $button-success-hover-bg;
     }
   }
 }
