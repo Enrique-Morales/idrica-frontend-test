@@ -51,7 +51,7 @@ const EditModal = (props: EditModalProps) => {
     <Modal onClose={onClose} show={show}>
       <div data-testid="editmodal" className="edit">
         <div className="edit-body">
-          <Text variant={TextVariants.H6}>Editing post {post?.id}</Text>
+          <Text variant={TextVariants.H6}>Edit post {post?.id}</Text>
           <input
             className="edit-input"
             type="text"

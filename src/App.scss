@@ -2,12 +2,14 @@
 
 .app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-evenly;
   background-color: $app-bg-golor;
-  min-width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   &-title {
-    margin: 24px;
+    padding: 24px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
   }
 }

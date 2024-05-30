@@ -16,7 +16,7 @@
   }
   &-input {
     width: 80%;
-    margin-top: 12px;
+    margin-top: 24px;
     appearance: none;
     box-shadow: $input-box-shadow;
     border: $input-border;
@@ -34,5 +34,6 @@
   &-actions {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 12px;
   }
 }

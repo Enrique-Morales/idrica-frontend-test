@@ -15,7 +15,7 @@ test("renders child node", () => {
 });
 
 test("applies css class according to variant", () => {
-  render(<Text variant={TextVariants.H3}>Hello World</Text>);
+  render(<Text variant={TextVariants.H2}>Hello World</Text>);
   const textElement = screen.getByText(/hello world/i);
-  expect(textElement).toHaveClass("text-h3");
+  expect(textElement).toHaveClass("text-h2");
 });

@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="app-title">
-        <Text variant={TextVariants.H3}>Idrica Frontend Test - Cards</Text>
+        <Text variant={TextVariants.H2}>Idrica Frontend Test - Cards App</Text>
       </div>
       <PostsViewer />
     </div>
