@@ -8,7 +8,7 @@ Install dependencies:
 npm install
 ```
 
-Run deployment server:
+Run development server:
 
 ```
 npm start
